@@ -27,7 +27,7 @@ from .core import (
 
 APP_ROOT = Path(os.environ.get("LOCALAPPDATA") or Path.home()) / "ShlepaFlash"
 DOWNLOAD_DIR = APP_ROOT / "downloads"
-USER_AGENT = "ShlepaFlash-Desktop/1.0.0 (+https://sflasher.bot.nu)"
+USER_AGENT = "ShlepaFlash-Desktop/1.0.2 (+https://sflasher.bot.nu)"
 
 
 def list_serial_ports() -> list[dict[str, str]]:

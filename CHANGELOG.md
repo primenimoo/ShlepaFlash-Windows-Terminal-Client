@@ -1,10 +1,19 @@
-
 # Changelog
+
+## 1.0.2 — Compact centered terminal UI
+- Replaced the old logo with the supplied 5-row block wordmark; SHLEPA is white and FLASH is orange.
+- Simplified the home menu to plain text items with hover/selection highlighting.
+- Centered the main content, device/firmware lists, USB selection, and confirmation dialogs.
+- Removed visible esptool/download log panes; diagnostic output remains in `logs/client.log`.
+- Added shared ASCII-art percentage and progress-track renderers for download and flashing screens.
+- Added renderer tests and removed the nested firmware-description scroll area.
+
 
 ## 1.0.1
 
 - Fix startup failure on older supported Textual releases by removing redundant `text-wrap: wrap` declarations; normal wrapping is Textual default.
 - Add a regression test to prevent unsupported stylesheet declarations from returning.
+
 
 ## 1.0.0
 
