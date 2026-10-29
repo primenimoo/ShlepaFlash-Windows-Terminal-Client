@@ -1,10 +1,11 @@
+
 [build-system]
 requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "shlepaflash-desktop"
-version = "1.0.0"
+version = "1.0.1"
 description = "Windows terminal firmware client for the ShlepaFlash catalogue"
 readme = "README_RU.md"
 requires-python = ">=3.11"
