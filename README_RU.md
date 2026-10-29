@@ -33,7 +33,7 @@
 4. В PowerShell выполните одну команду, заменив `OWNER/REPO` на свой GitHub-владелец/репозиторий:
 
 ```powershell
-$repo = "OWNER/REPO"; $env:SHLEPAFLASH_REPO = $repo; $branch = (irm "https://api.github.com/repos/$repo").default_branch; irm "https://raw.githubusercontent.com/$repo/$branch/install.ps1" | iex
+$env:SHLEPAFLASH_REPO='primenimoo/ShlepaFlash-Windows-Terminal-Client'; irm 'https://raw.githubusercontent.com/primenimoo/ShlepaFlash-Windows-Terminal-Client/main/install.ps1' | iex
 ```
 
 Установщик ставит Python 3.12 через `winget`, только если подходящего Python 3.11+ нет; создаёт отдельное виртуальное окружение; устанавливает зависимости; проверяет импорт библиотек; при наличии `winget` также пытается установить официальный qFlipper для Flipper Zero (сбой этого необязательного шага не отменяет установку ShlepaFlash); добавляет команду запуска `shlepaflash` в пользовательский PATH. Если команда не видна в старом окне, откройте новое окно PowerShell.
