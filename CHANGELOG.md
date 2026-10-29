@@ -1,4 +1,10 @@
+
 # Changelog
+
+## 1.0.1
+
+- Fix startup failure on older supported Textual releases by removing redundant `text-wrap: wrap` declarations; normal wrapping is Textual default.
+- Add a regression test to prevent unsupported stylesheet declarations from returning.
 
 ## 1.0.0
 
